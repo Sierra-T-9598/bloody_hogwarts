@@ -1,0 +1,4 @@
+<h1> List of Courses </h1>
+<% @courses.alphabetize.each do |course| %>
+  <p><%= course.name %>: <%= course.students.count %> </p>
+<% end %>
